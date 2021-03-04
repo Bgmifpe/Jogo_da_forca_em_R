@@ -2,7 +2,7 @@
 title: "Jogo da forca em R"
 author: "Beatriz Maciel"
 date: "04/03/2021"
-output: html_document
+output: md_document
 ---
 
 
