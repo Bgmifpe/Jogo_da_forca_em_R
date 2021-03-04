@@ -31,3 +31,5 @@ out of tries (lives).The game can be played in R Studio, where the user
 inputs new letters in console, and the picture is being drawn (using
 library ggplot2). The picture consists of 7 false tries, so it is drawn
 in 7 steps.
+
+<img src="boneco.PNG" class="screenshot" width=800 />
