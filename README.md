@@ -1,35 +1,35 @@
-Pacote estatistica
-================
-Beatriz Maciel
-04/03/2021
+# Instalação
 
-## R Markdown
+ggplot2 is a system for declaratively creating graphics, based on The
+Grammar of Graphics. You provide the data, tell ggplot2 how to map
+variables to aesthetics, what graphical primitives to use, and it takes
+care of the details.
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
+Instalar via CRAN
 
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+    install.packages("ggplot2")
 
-``` r
-summary(cars)
-```
+# Aplicação
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+It’s hard to succintly describe how ggplot2 works because it embodies a
+deep philosophy of visualisation. However, in most cases you start with
+ggplot(), supply a dataset and aesthetic mapping (with aes()). You then
+add on layers (like geom\_point() or geom\_histogram()), scales (like
+scale\_colour\_brewer()), faceting specifications (like facet\_wrap())
+and coordinate systems (like coord\_flip()).
 
-## Including Plots
+    library(ggplot2)
 
-You can also embed plots, for example:
+    ggplot(mpg, aes(displ, hwy, colour = class)) + 
+      geom_point()
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
+# Exemplo jogo da forca
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+Hangman is a classic word game in which you need to need to guess as
+many possible letters in word, so you can guess the word, before running
+out of tries (lives).The game can be played in R Studio, where the user
+inputs new letters in console, and the picture is being drawn (using
+library ggplot2). The picture consists of 7 false tries, so it is drawn
+in 7 steps.
+
+<img src="boneco.PNG" class="screenshot" width=800 />
