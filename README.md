@@ -1,9 +1,9 @@
 # Instalação
 
-ggplot2 is a system for declaratively creating graphics, based on The
-Grammar of Graphics. You provide the data, tell ggplot2 how to map
-variables to aesthetics, what graphical primitives to use, and it takes
-care of the details.
+ggplot2 é um sistema para a criação declarativa de gráficos, baseado na
+Gramática dos Gráficos. Você fornece os dados, diz ao ggplot2 como
+mapear as variáveis ​​para a estética, quais primitivos gráficos usar e
+ele cuida dos detalhes.
 
 Instalar via CRAN
 
@@ -11,12 +11,13 @@ Instalar via CRAN
 
 # Aplicação
 
-It’s hard to succintly describe how ggplot2 works because it embodies a
-deep philosophy of visualisation. However, in most cases you start with
-ggplot(), supply a dataset and aesthetic mapping (with aes()). You then
-add on layers (like geom\_point() or geom\_histogram()), scales (like
-scale\_colour\_brewer()), faceting specifications (like facet\_wrap())
-and coordinate systems (like coord\_flip()).
+É difícil descrever sucintamente como o ggplot2 funciona porque ele
+incorpora uma profunda filosofia de visualização. No entanto, na maioria
+dos casos, você começa com ggplot (), fornece um conjunto de dados e um
+mapeamento estético (com aes ()). Você então adiciona camadas (como
+geom\_point () ou geom\_histogram ()), escalas (como
+scale\_colour\_brewer ()), especificações de facetas (como facet\_wrap
+()) e sistemas de coordenadas (como coord\_flip ()).
 
     library(ggplot2)
 
@@ -25,11 +26,10 @@ and coordinate systems (like coord\_flip()).
 
 # Exemplo jogo da forca
 
-Hangman is a classic word game in which you need to need to guess as
-many possible letters in word, so you can guess the word, before running
-out of tries (lives).The game can be played in R Studio, where the user
-inputs new letters in console, and the picture is being drawn (using
-library ggplot2). The picture consists of 7 false tries, so it is drawn
-in 7 steps.
+Hangman é um jogo de palavras clássico no qual você precisa adivinhar o
+maior número possível de letras, para que possa adivinhar a palavra,
+antes de ficar sem tentativas (vidas). novas letras no console, e a
+imagem está sendo desenhada (usando a biblioteca ggplot2). A imagem
+consiste em 7 tentativas falsas, por isso é desenhada em 7 etapas.
 
 <img src="boneco.PNG" class="screenshot" width=800 />
